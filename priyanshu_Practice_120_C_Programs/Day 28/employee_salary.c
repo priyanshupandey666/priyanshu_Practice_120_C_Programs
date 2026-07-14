@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    char name[50];
+    float basic, hra, da, gross;
+
+    printf("Enter Employee Name: ");
+    scanf("%s", name);
+
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic);
+
+    hra = basic * 0.20;
+    da = basic * 0.10;
+    gross = basic + hra + da;
+
+    printf("\n----- Salary Details -----\n");
+    printf("Employee : %s\n", name);
+    printf("Gross Salary = %.2f\n", gross);
+
+    return 0;
+}
